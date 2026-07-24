@@ -1,0 +1,26 @@
+Question 5
+
+Recovery mechanisms in vi:
+
+1. Swap Files (.swp)
+- vi automatically creates a swap file while editing.
+- It helps recover unsaved work after a crash.
+
+2. Undo History
+- Undo allows reverting recent changes using the 'u' command.
+- It works only while the editing session is active or when persistent undo is enabled.
+
+3. Registers
+- Registers temporarily store copied or deleted text.
+- They can be used to recover accidentally deleted content.
+
+4. Backup Files
+- Backup files store a copy of the original file before editing.
+- They protect against accidental file corruption.
+
+5. Auto-Recovery
+- After a crash, vi detects the swap file and suggests recovering the unsaved changes using the recovery option.
+
+Most Reliable Recovery Strategy:
+
+The most reliable recovery method is using the swap file together with vi's auto-recovery feature. The swap file automatically stores editing progress and allows recovery after unexpected crashes. Backup files provide an additional safety layer by preserving the original version of the file.
